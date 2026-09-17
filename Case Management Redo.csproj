@@ -43,8 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Charge.cs" />
+    <Compile Include="Entities\Court.cs" />
+    <Compile Include="Entities\CourtCase.cs" />
+    <Compile Include="Entities\Defendant.cs" />
+    <Compile Include="Entities\Judge.cs" />
+    <Compile Include="Entities\OriginalCase.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Entities\Prosecutor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
