@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Case_Management_Redo.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,29 +7,21 @@ using System.Threading.Tasks;
 
 namespace Case_Management_Redo
 {
-    internal class Defendant
+    internal class Defendant :Person
     {
-        private string _id;  //ID number
-        private string _name;
 
-        public Defendant(string id, string name)
+        public Defendant(string id, string name) : base(id, name)
         {
 
-            _id = id;
-            _name = name;
-        }
 
-        public string getName()
-        {
-            return _name;
         }
         public string getDetails()
         {
 
             string info = "";
 
-            info = "\n Defendant ID: " + _id.ToString();
-            info += "\n Defendant Name: " + _name;
+            info = "\n Defendant ID: " + getId();
+            info += "\n Defendant Name: " + getName();
             return info;
         }
     }

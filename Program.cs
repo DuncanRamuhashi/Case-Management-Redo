@@ -106,12 +106,12 @@ namespace Case_Management_Redo
                             // now for Judge
                             Console.WriteLine("Enter the Judge Name: \n");
                             string judgeName = Console.ReadLine();
-                            courtCase.assignJudge(1, judgeName);
+                            courtCase.assignJudge("4532", judgeName);
 
                             // now for Prosecutor
                             Console.WriteLine("Enter the Prosecutor Name: \n");
                             string prosecutorName = Console.ReadLine();
-                            courtCase.assignProsecutor(1, prosecutorName);
+                            courtCase.assignProsecutor("6789", prosecutorName);
 
                             // now for status
 

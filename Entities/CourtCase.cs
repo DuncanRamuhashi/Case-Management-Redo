@@ -48,11 +48,11 @@ namespace Case_Management_Redo
         {
             _court = new Court(id, name, location);
         }
-        public void assignJudge(int id, string name)
+        public void assignJudge(string id, string name)
         {
             _judge = new Judge(id, name);
         }
-        public void assignProsecutor(int id, string name)
+        public void assignProsecutor(string id, string name)
         {
             _prosecutor = new Prosecutor(id, name);
         }
