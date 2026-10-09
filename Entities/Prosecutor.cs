@@ -9,16 +9,11 @@ namespace Case_Management_Redo
 {
     internal class Prosecutor: Person
     {
-      
-
         public Prosecutor(string id, string name) : base(id, name)
         {
 
          
         }
 
-        
-
-   
     }
 }

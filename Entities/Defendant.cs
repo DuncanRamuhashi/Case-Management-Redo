@@ -17,9 +17,7 @@ namespace Case_Management_Redo
         }
         public string getDetails()
         {
-
             string info = "";
-
             info = "\n Defendant ID: " + getId();
             info += "\n Defendant Name: " + getName();
             return info;

@@ -16,7 +16,6 @@ namespace Case_Management_Redo
             while (true)
             {
                 Console.Clear();
-
                 Console.WriteLine("Welcome to the Case Management System \n");
                 Console.WriteLine(" =----------------------------------------=\n");
                 Console.WriteLine("Enter 0 to exit.\n");
@@ -35,15 +34,12 @@ namespace Case_Management_Redo
                         List<string> charges = new List<string>();
                         if (originalCase.getCaseNumber() == originatingCaseNumber.ToString())
                         {
-
-
                             while (true)
                             {
                                 Console.WriteLine("Enter the Number of Defendants: \n");
                                 int numberOfDefendants = int.Parse(Console.ReadLine());
 
-
-                                //ictionary<int, string> defendants
+                                //Dictionary<int, string> defendants
                                 //for defendants
                                 for (int d = 0; d < numberOfDefendants; d++)
                                 {
@@ -87,8 +83,6 @@ namespace Case_Management_Redo
                                 break;
 
                             }
-
-
 
                             courtCase = new CourtCase(1, originalCase.getCaseNumber(), charges, defendants);
 
@@ -155,11 +149,6 @@ namespace Case_Management_Redo
                                 break;
 
                             }
-
-
-
-
-
                         }
 
 
@@ -169,9 +158,7 @@ namespace Case_Management_Redo
                     Console.WriteLine("============================================================");
                     Console.WriteLine("Case Information: \n");
                     Console.WriteLine("============================================================");
-
                     Console.WriteLine(courtCase.displayCaseInfo());
-
                     Console.WriteLine("Press any key to continue...");
                     Console.ReadKey();
                 }
@@ -180,28 +167,12 @@ namespace Case_Management_Redo
         private static void loadDummyData()
         {
             // ORIGINAL CASES
-
-
             OriginalCase case1 = new OriginalCase(1, "1001", "State vs John Doe", "Johannesburg", 2026);
-
             originalCases.Add(case1);
-
             OriginalCase case2 = new OriginalCase(2, "1002", "State vs Michael Smith", "Pretoria", 2026);
             originalCases.Add(case2);
-
             OriginalCase case3 = new OriginalCase(3, "1003", "State vs David Mokoena", "Soweto", 2025);
-
-
             originalCases.Add(case3);
-
-
-
-            // COURTS
-
-
-            // Court court1 = new Court(1, "Johannesburg High Court", "Johannesburg");
-
-
         }
     }
 }

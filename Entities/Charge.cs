@@ -10,19 +10,14 @@ namespace Case_Management_Redo
     {
         private int _id;
         private string _name;
-
         public Charge(int id, string name)
         {
-
             _id = id;
             _name = name;
         }
-
         public string getDetails()
         {
-
             string info = "";
-
             info = "\n Charge ID: " + _id.ToString();
             info += "\n Charge Name: " + _name;
             return info;

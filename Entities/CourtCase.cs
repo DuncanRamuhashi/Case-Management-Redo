@@ -20,11 +20,8 @@ namespace Case_Management_Redo
         //Composition
         private List<Charge> _charges;
         private Dictionary<string, Defendant> _defendant;
-
-
         public CourtCase(int id, string courtCaseNUmber, List<string> charges, Dictionary<string, string> defendants)
         {
-
             _id = id;
             _courtCaseNumber = courtCaseNUmber;
 

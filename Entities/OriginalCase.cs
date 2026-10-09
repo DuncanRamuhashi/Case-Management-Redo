@@ -32,7 +32,6 @@ namespace Case_Management_Redo
 
             string info = "";
 
-
             info += "\n Case Number: " + _caseNumber;
             info += "\n Case Name: " + _name;
             info += "\n Case Location: " + _location;
